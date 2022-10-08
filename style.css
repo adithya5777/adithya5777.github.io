@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+}
+
+a:link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(95.36% 301.4% at 2.08% 15.46%, rgba(28, 29, 179, 0.956315) 0%, rgba(51, 128, 146, 0.71) 54.27%, rgba(28, 29, 179, 0.956315) 100%);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    box-shadow: rgb(97, 97, 97) 1px 1px 30px;
+}
+
+.name {
+    position: absolute;
+    top: 25%;
+    left: 7%;
+}
+
+.name1 {
+    position: absolute;
+    left: 7%;
+    bottom: 15%;
+}
+
+h1 {
+    font-family: "Aldrich";
+    font-size: 7em;
+    color: #fff;
+}
+
+h2 {
+    font-family: "Josefin Sans";
+    font-size: 5vh;
+    color: rgb(0, 0, 0);
+}
+
+.myself {
+    width: 55vh;
+    height: 55vh;
+    position: absolute;
+    right: 11%;
+    bottom: 10%;
+    border-radius: 100%;
+    border: solid rgba(255, 255, 255, 0.8) 5px;
+}
+
+.nav {
+    background-color: rgba(185, 22, 22, 0.198);
+    height: 100px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.fe {
+    font-family: 'Josefin Sans';
+    font-size: 4em;
+}
+
+.line {
+    font-family: 'Anonymous Pro', monospace;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 4em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 3s steps(10) 1s 1 normal both, blinkTextCursor 500ms steps(10) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 5.25em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.circle1 {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(10px);
+    width: 200vw;
+    height: 200vh;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+.circle {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.33);
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    right: 30%;
+    bottom: 5%;
+}
+
+.blue {
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 10vh;
+    position: absolute;
+    right: 15%;
+    bottom: 8%;
+    background-image: url(/img/student.webp);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.above {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills {
+    margin: 0 25px 0 25px;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(217, 233, 238, 0.807);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    flex-direction: column;
+    box-shadow: #363636 1px 1px 10px;
+}
+
+.mine {
+    margin: 0 25px 0 25px;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(217, 233, 238, 0.807);
+    border-radius: 30px;
+    box-shadow: #363636 1px 1px 10px;
+}
+
+ul {
+    font-weight: 600;
+    padding: 0 50px;
+    font-size: 1.5em;
+    font-family: "Josefin Sans";
+    line-height: 200%;
+}
+
+.d {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    height: 120vh;
+    background-image: url(/img/WEB1.webp);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+.ed {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 150px auto;
+    padding: 0px;
+    width: 80%;
+    height: 20%;
+    background-color: rgb(217, 233, 238, 0.807);
+    box-shadow: #363636 1px 1px 10px;
+    border-radius: 30px;
+}
+
+.ll {
+    display: list-item;
+    align-items: center;
+}
+
+.ee {
+    list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    .name {
+        font-size: 0.4em;
+        position: unset;
+    }
+    .name1 {
+        position: unset;
+        z-index: 1;
+    }
+    .circle {
+        display: none;
+    }
+    .circle1 {
+        right: 0%;
+    }
+    .myself {
+        scale: 0.6;
+        margin-top: 15%;
+        position: unset;
+    }
+    .blue {
+        scale: 0.8;
+        right: 5%;
+        top: 1%;
+    }
+    .name1 {
+        top: 50%;
+        font-size: 0.425em;
+    }
+    .line {
+        position: unset;
+        margin-top: 30%;
+        margin-bottom: -20%;
+    }
+    .above {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mine {
+        font-size: 0.75em;
+        width: 100%;
+    }
+    .skills {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .ed {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 90%;
+    }
+    .d {
+        height: max-content;
+        background-position: 52%;
+        background-size: cover;
+    }
+    ul {
+        padding: 0 20px;
+    }
+}
